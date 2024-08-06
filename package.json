@@ -10,7 +10,8 @@
 		"lint": "eslint --fix \"./src/**/*.{js,jsx,ts,tsx,json}\"",
 		"format": "prettier --write \"./src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\" --ignore-path ./.prettierignore",
 		"test": "yarn stylelint:fix && yarn lint && yarn format",
-		"prepare": "husky"
+		"prepare": "husky", 
+		"commit": "yarn test && cz"
 	},
 	"author": "",
 	"license": "ISC",
@@ -35,8 +36,10 @@
 		"@typescript-eslint/parser": "^8.0.1",
 		"autoprefixer": "^10.4.20",
 		"clean-webpack-plugin": "^4.0.0",
+		"commitizen": "^4.3.0",
 		"css-loader": "^7.1.2",
 		"cssnano": "^7.0.4",
+		"cz-conventional-changelog": "^3.3.0",
 		"eslint": "^9.8.0",
 		"eslint-config-prettier": "^9.1.0",
 		"eslint-plugin-comments": "^1.0.0",
